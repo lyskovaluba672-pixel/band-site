@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Контакты - Музыкальная группа</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1><i class="fas fa-guitar"></i> НАЗВАНИЕ ГРУППЫ</h1>
+                <p>Альтернативный рок | Барнаул</p>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О группе</a></li>
+                    <li><a href="music.html">Музыка</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="concerts.html">Концерты</a></li>
+                    <li><a href="contacts.html" class="active">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Контакты</h1>
+                <p>Свяжись с нами — мы на связи 24/7</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>band@groupname.ru</p>
+                                <p>booking@groupname.ru</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-telegram"></i>
+                            <div>
+                                <h3>Telegram</h3>
+                                <p>@groupname_official</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-vk"></i>
+                            <div>
+                                <h3>VK</h3>
+                                <p>vk.com/groupname</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <div>
+                                <h3>Instagram</h3>
+                                <p>@groupname_official</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-youtube"></i>
+                            <div>
+                                <h3>YouTube</h3>
+                                <p>youtube.com/@groupname</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-block">
+                        <h3>Напиши нам</h3>
+                        <form id="feedbackForm">
+                            <div class="form-group">
+                                <label for="name">Твое имя *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Тема *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Выберите тему</option>
+                                    <option value="booking">Организация концерта</option>
+                                    <option value="collab">Сотрудничество</option>
+                                    <option value="press">Пресса / Интервью</option>
+                                    <option value="fan">Сообщение от фаната</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Сообщение *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">Отправить</button>
+                        </form>
+                        <div id="formMessage" class="form-message"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О группе</a></li>
+                    <li><a href="music.html">Музыка</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="concerts.html">Концерты</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Группа «Название группы»</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

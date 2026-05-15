@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Главная - Рок-группа "Название группы"</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1><i class="fas fa-guitar"></i> НАЗВАНИЕ ГРУППЫ</h1>
+                <p>Альтернативный рок | Барнаул</p>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="about.html">О группе</a></li>
+                    <li><a href="music.html">Музыка</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="concerts.html">Концерты</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Герой-секция -->
+        <section class="hero-band">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h2>НОВЫЙ АЛЬБОМ</h2>
+                    <h1>«ПУСТЬ ИГРАЕТ МУЗЫКА»</h1>
+                    <p>Доступен на всех цифровых площадках</p>
+                    <div class="hero-buttons">
+                        <a href="music.html" class="btn-primary">Слушать</a>
+                        <a href="concerts.html" class="btn-secondary">Концерты</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- О группе кратко -->
+        <section class="intro">
+            <div class="container">
+                <div class="intro-grid">
+                    <div class="intro-text">
+                        <h2 class="section-title">Кто мы</h2>
+                        <p>«Название группы» — это энергичная рок-группа из города Барнаула, созданная в 2020 году. Наша музыка — это смесь альтернативного рока, инди и пост-панка. За годы существования мы выпустили 2 студийных альбома, 5 синглов и дали более 50 концертов по всей России.</p>
+                        <p>Мы играем для тех, кто ищет смыслы, эмоции и настоящий драйв. Присоединяйся к нашей команде!</p>
+                        <a href="about.html" class="btn-outline">Подробнее о нас</a>
+                    </div>
+                    <div class="intro-stats">
+                        <div class="stat">
+                            <i class="fas fa-music"></i>
+                            <span class="stat-number">7</span>
+                            <span class="stat-label">треков</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">концертов</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-users"></i>
+                            <span class="stat-number">5k+</span>
+                            <span class="stat-label">слушателей</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Последний релиз -->
+        <section class="latest-release">
+            <div class="container">
+                <h2 class="section-title">Последний релиз</h2>
+                <div class="release-card">
+                    <div class="release-cover">
+                        <img src="images/album-cover.jpg" alt="Обложка альбома" onerror="this.src='https://via.placeholder.com/300x300?text=Обложка+альбома'">
+                    </div>
+                    <div class="release-info">
+                        <h3>«Пусть играет музыка»</h3>
+                        <p class="release-date">Вышел: 15 мая 2025</p>
+                        <p>Третий студийный альбом, который отражает наш творческий путь. В него вошли 10 треков, записанных на лучших студиях Москвы и Санкт-Петербурга.</p>
+                        <div class="release-links">
+                            <a href="#" class="platform"><i class="fab fa-spotify"></i> Spotify</a>
+                            <a href="#" class="platform"><i class="fab fa-apple"></i> Apple Music</a>
+                            <a href="#" class="platform"><i class="fab fa-youtube"></i> YouTube</a>
+                            <a href="#" class="platform"><i class="fab fa-vk"></i> VK Music</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ближайшие концерты -->
+        <section class="upcoming-concerts">
+            <div class="container">
+                <h2 class="section-title">Ближайшие концерты</h2>
+                <div class="concerts-list" id="concertsPreview">
+                    <!-- Загружается через JavaScript -->
+                </div>
+                <div class="text-center">
+                    <a href="concerts.html" class="btn-primary">Все концерты</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Видео/Медиа -->
+        <section class="video-section">
+            <div class="container">
+                <h2 class="section-title">Видеоклип</h2>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Подписка -->
+        <section class="subscribe">
+            <div class="container">
+                <h2>Будь в курсе новостей</h2>
+                <p>Подпишись на рассылку и получай информацию о новых релизах и концертах первым</p>
+                <form id="subscribeForm" class="subscribe-form">
+                    <input type="email" id="subscribeEmail" placeholder="Твой email" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+                <div id="subscribeMessage"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О группе</a></li>
+                    <li><a href="music.html">Музыка</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="concerts.html">Концерты</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Группа «Название группы». Все права защищены.</p>
+                <p>Разработано в рамках дипломного проекта</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

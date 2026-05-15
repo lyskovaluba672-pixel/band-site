@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>О группе - Музыкальная группа</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1><i class="fas fa-guitar"></i> НАЗВАНИЕ ГРУППЫ</h1>
+                <p>Альтернативный рок | Барнаул</p>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html" class="active">О группе</a></li>
+                    <li><a href="music.html">Музыка</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="concerts.html">Концерты</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>О группе</h1>
+                <p>История, состав и творческий путь</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2>История создания</h2>
+                        <p>Группа была основана в 2020 году в городе Барнауле. Изначально это был музыкальный проект двух друзей — Александра (гитара, вокал) и Дмитрия (барабаны). Позже к ним присоединились Михаил (бас-гитара) и Екатерина (клавишные).</p>
+                        <p>Первый концерт состоялся в местном клубе «Рок-Сити» в феврале 2021 года. С тех пор группа активно выступает по всей России, участвует в фестивалях и радует слушателей новой музыкой.</p>
+                        
+                        <h2>Стиль и влияние</h2>
+                        <p>Наше творчество вдохновлено такими группами, как Radiohead, Muse, Nirvana и «Сплин». Мы создаём эмоциональную, глубокую музыку с элементами альтернативы и инди.</p>
+                        
+                        <h2>Достижения</h2>
+                        <ul>
+                            <li>Победители фестиваля «Рок-Волна 2023»</li>
+                            <li>Участники фестиваля «Урбан» в Москве</li>
+                            <li>Выпуск альбома «Пусть играет музыка» (2025)</li>
+                            <li>Более 50 000 прослушиваний на Spotify</li>
+                        </ul>
+                    </div>
+                    <div class="about-photo">
+                        <img src="images/band-group.jpg" alt="Фото группы" onerror="this.src='https://via.placeholder.com/500x400?text=Фото+группы'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="members">
+            <div class="container">
+                <h2 class="section-title">Состав группы</h2>
+                <div class="members-grid" id="membersGrid">
+                    <!-- Загружается через JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-spotify"></i></a>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О группе</a></li>
+                    <li><a href="music.html">Музыка</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="concerts.html">Концерты</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Группа «Название группы». Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

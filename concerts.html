@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Концерты - Музыкальная группа</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1><i class="fas fa-guitar"></i> НАЗВАНИЕ ГРУППЫ</h1>
+                <p>Альтернативный рок | Барнаул</p>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О группе</a></li>
+                    <li><a href="music.html">Музыка</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="concerts.html" class="active">Концерты</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Афиша концертов</h1>
+                <p>Приходи на наши выступления — зарядись энергией!</p>
+            </div>
+        </section>
+
+        <section class="concerts-list-full">
+            <div class="container">
+                <h2 class="section-title">Ближайшие выступления</h2>
+                <div id="concertsFullList">
+                    <!-- Загружается через JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="past-concerts">
+            <div class="container">
+                <h2 class="section-title">Прошедшие концерты</h2>
+                <div id="pastConcertsList">
+                    <!-- Загружается через JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="booking">
+            <div class="container">
+                <div class="booking-card">
+                    <h2>Организация концертов</h2>
+                    <p>По вопросам организации выступлений и сотрудничества пишите на почту: booking@bandname.ru</p>
+                    <a href="contacts.html" class="btn-primary">Связаться</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О группе</a></li>
+                    <li><a href="music.html">Музыка</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="concerts.html">Концерты</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Группа «Название группы»</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
